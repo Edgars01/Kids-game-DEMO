@@ -1,0 +1,143 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="ballBounceAndToothBrush.css">
+    <link rel="stylesheet" href="dragItems.css">
+    <link rel="stylesheet" href="face.css">
+    <link rel="stylesheet" href="foodItemPositions.css">
+    
+</head>
+
+<body ontouchmove="dragFunction(event)"> 
+
+    <div class="wrapper">
+
+        <div class="drag-container">
+          <div class="drag-item goodFood  hoverInSelectBar_1" draggable="true" id="goodFood1">
+                <img src="DragablePictures/banana.webp" class="banana">
+          </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item badFood  hoverInSelectBar_2" draggable="true" id="badFood1">
+                <img src="DragablePictures/cake.webp" class="cake">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item goodFood  hoverInSelectBar_1" draggable="true" id="goodFood2">
+                <img src="DragablePictures/apple.webp" class="apple">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item fatFood hoverInSelectBar_2" draggable="true" id="fatFood1">
+                <img src="DragablePictures/cheese.webp" class="cheese">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item goodFood hoverInSelectBar_1" draggable="true" id="goodFood3">
+                <img src="DragablePictures/cherry.webp" class="cherry">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item goodFood hoverInSelectBar_2" draggable="true" id="goodFood4">
+                <img src="DragablePictures/grape.webp" class="grape">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item fatFood hoverInSelectBar_1" draggable="true" id="fatFood2">
+                <img src="DragablePictures/icecream.webp" class="icecream">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item goodFood hoverInSelectBar_2" draggable="true" id="goodFood5">
+                <img src="DragablePictures/plum.webp" class="plum">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item goodFood hoverInSelectBar_1" draggable="true" id="goodFood6">
+                <img src="DragablePictures/pumpkin.webp" class="pumpkin">
+            </div>
+        </div>
+
+        <div class="drag-container">
+            <div class="drag-item goodFood hoverInSelectBar_2" draggable="true" id="goodFood7">
+                <img src="DragablePictures/tomato.webp" class="tomato">
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <div class="dragPictureDiv">
+        <div class="dragPictureInnerDiv" id="toothPic">
+            
+            <div class="head">
+                <div class="eyes">
+                    <div class="eyebrowLeft"></div>
+                    <div class="eye">
+                       <div class="ball"></div>
+                    </div>
+                    
+                    <div class="eyebrowRight"></div>
+                    <div class="eye">
+                       <div class="ball"></div>
+                    </div>
+                </div>
+
+                <div class="mouth">
+                    <div class="cheek1"></div>
+                    <div class="cheek2"></div>
+                    <div id="tooth1" class="l-teeth tooth"></div>
+                    <div id="tooth2" class="l2-teeth tooth"></div>
+                    <div id="tooth3" class="r-teeth tooth"></div>
+                    <div id="tooth4" class="r2-teeth tooth"></div>
+
+                    <div class="toothBrushActive toothBrushActiveStyle object">
+                        <img src="DragablePictures/toothbrush.webp">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="gridWrapper">
+
+        <div class="grid-item">
+            
+            <div class="ballWrap">
+                <div class="jumpBall jumpAnimation">
+                    <img src="DragablePictures/footBall.webp">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid-item">
+            
+            <div class="toothBrushWrap">
+                <div class="toothBrush">
+                    <img src="DragablePictures/toothbrush.webp">
+                </div>
+            </div>
+
+        </div>
+          
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="lvl6.js"></script>
+
+</body>
+
+</html>

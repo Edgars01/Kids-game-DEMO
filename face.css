@@ -1,0 +1,205 @@
+/* head */
+
+.head {
+    background: yellow !important;
+    width: 550px;
+    height: 550px;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .mouth {
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    top: 320px;
+    left: 32%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .l-teeth {
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    left: 29%;
+  }
+  
+  .l2-teeth {
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    left: 7%;
+  }
+  
+  .r-teeth {
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    right: 29%;
+  }
+  
+  .r2-teeth {
+    position: absolute;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    right: 7%;
+  }
+  
+  .teethColor1 {
+    background: rgb(231,230,203);
+    background: linear-gradient(90deg, 
+    rgba(231,230,203,0.8379726890756303) 0%, 
+    rgba(238,238,229,0.4430147058823529) 50%, 
+    rgba(231,230,203,0.8379726890756303) 100%);
+  } 
+  
+  
+  .cheekStyle1 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
+    background: yellow !important;
+    
+    margin-top: -10px;
+    margin-left: -180px;
+  }
+  
+  .cheekStyle2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 999px;
+    background: yellow !important;
+    
+    margin-left: 200px;
+    margin-top: -10px;
+  }
+  
+  
+  /* eyes */ 
+  
+  .eyes {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    background: yellow !important;
+    border-radius: 100%;
+  }
+  
+  .eye {
+    width: 150px;
+    height: 150px;
+    background: rgb(230,230,230);
+    background: radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 100%);
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    border: yellow !important;
+    position: relative;
+    overflow: hidden;
+    animation: blink 5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+  }
+  
+  .ball {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: absolute; /* relative */
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    border-radius: 50%;
+    border: 10px solid #6d6875;
+  }
+  
+  .eyebrowLeft {
+    position: absolute;
+    z-index:1000;
+    width: 140px;
+    height: 65px;
+    background-color: gold;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid gray;
+    border-bottom: 0;
+    margin-left: 100px;
+    margin-top: -10px;
+  
+    -webkit-animation: mover2 3s infinite  alternate;
+    animation: mover2 3s infinite  alternate;
+  }
+  
+  .eyebrowRight {
+    position: absolute;
+    z-index:1000;
+    width: 140px;
+    height: 65px;
+    background-color: gold;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid gray;
+    border-bottom: 0px;
+    margin-left: 290px;
+    margin-top: -205px;
+  
+    -webkit-animation: mover2 3s infinite  alternate;
+    animation: mover2 3s infinite  alternate;
+  }
+  
+
+  @-webkit-keyframes mover2 {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-12px); }
+  }
+  @keyframes mover2 {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-12px); }
+  }
+
+
+/* spin head */
+
+  .animate-grow {
+    animation: 1s spin ease-in-out normal both;
+  }
+  
+  .animate-shrink {
+    animation: 1s spin2 ease-in-out normal both;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes spin2 {
+    0% {
+      transform: rotate(720deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
